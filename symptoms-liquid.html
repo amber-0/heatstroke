@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg">
+  <title>熱中症予防労働衛生教育 | 体液の調節</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<header>
+  <div class="container">
+    <a href="index.html">
+      <img src="img/logo.png" 
+      alt="Heat Stroke"
+      width="200"
+      height="60"
+      class="logo">
+    </a>
+  </div>
+
+  <nav>
+    <ul class="gnav">
+      <li><a href="about.html">教育の概要</a></li> 
+      <li><a href="symptoms.html">熱中症の症状</a>
+        <ul>
+          <li><a href="symptoms-about.html">熱中症の概要</a></li>            
+          <li><a href="symptoms-feature.html">職場における熱中症の特徴</a></li>            
+          <li><a href="symptoms-temp.html">体温の調節</a></li>            
+          <li><a href="symptoms-liquid.html">体液の調節</a></li>            
+          <li><a href="symptoms-occur.html">発生する仕組みと症状</a></li>            
+        </ul>
+      </li>
+      <li><a href="prevention.html">熱中症の予防方法</a>
+        <ul>
+          <li><a href="prevention-wbgt.html">WBGT値について</a></li>            
+          <li><a href="prevention-env.html">作業環境管理</a></li>            
+          <li><a href="prevention-work.html">作業管理</a></li>            
+          <li><a href="prevention-health.html">健康管理</a></li>            
+          <li><a href="prevention-example.html">熱中症対策事例</a></li>            
+        </ul>
+      </li>
+      <li><a href="emergency.html">緊急時の措置</a>
+        <ul>
+          <li><a href="emergency-report.html">緊急連絡網の周知</a></li>            
+          <li><a href="emergency-rescue.html">緊急時の救急措置</a></li>            
+       </ul>
+      </li>
+      <li><a href="example.html">事例紹介</a></li>      
+    </ul>
+  </nav>
+
+</header>
+
+
+<body>
+  <h1>体液の調節</h1>
+  <h2>人の特徴</h2>
+  <p>&emsp;&emsp;先ほどは体温の調節について学んできました。<br>
+    &emsp;&emsp;ゾウは<span class="borderunder">水浴び</span>で体温を下げ、犬は<span class="borderunder">口を開けて舌を出す</span>ことで体温を下げています。<br>
+    &emsp;&emsp;人は汗を流すことで<span class="borderunder">より効率的に体温調節</span>をしますが、一方でその弊害もあります。<br>
+    &emsp;&emsp;それが今から説明する体液の調節です。早速その内容を見ていきましよう。
+  </p>
+
+  <div>
+    <p class="fade"><img src="img/zou-inu.png" alt="ゾウ、犬、人の体温調節"></p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+
+  <h2>体液調節の仕組み</h2>
+  <h4>基本</h4>
+  <div class="index-top">
+    <p class="text">
+      &emsp;通常、汗は血液から作られます。その際、<br>
+      &emsp;ナトリウムやカリウム等の<span class="borderunder">電解質</span>も汗と<br>
+      &emsp;共に排出されることで、血液中の水分と<br>
+      &emsp;ナトリウムのバランスが崩れ、熱けいれん<br>
+      &emsp;等の症状を引き起こします。
+    </p>
+    <p>
+      <img src="img/NaKa.png" 
+      width="75%"
+      height="75%"
+      alt="">
+    </p>
+  </div>
+
+  <h4>ナトリウム濃度の調節</h4>
+  <p>&emsp;&emsp;左右のボタンを押して画像を切り替えましょう。
+  </p>
+
+  <div class="parent">
+    <img id="mypic" src="img/natorium/na1.png"
+     width="580" height="380">
+    <div class="children1">
+      <input type="button" value="" onclick="go_back()" class="goback">
+    </div>  
+    <div class="children2">      
+      <input type="button" value="" onclick="go_forward()" class="goforward">
+    </div>
+  </div>
+      <script>
+      var pics_src = new Array("img/natorium/na1.png","img/natorium/na2.png","img/natorium/na3.png","img/natorium/na4.png");
+      var num = 0;
+
+      function go_forward(){
+          if (num == 3) {
+              num = 0;
+          }
+          else {
+              num ++;
+          }
+          document.getElementById("mypic").src=pics_src[num];
+      }
+
+      function go_back(){
+          if (num == 0) {
+              num = 3;
+          }
+          else {
+              num --;
+          }
+          document.getElementById("mypic").src=pics_src[num];
+      }
+      </script>
+
+  <br><br>
+  <h4>暑熱順化とは？</h4>
+  
+  <div class="index-top">
+    <p class="text">
+      &emsp;&emsp;体が暑さに慣れること。暑い日が続くと体が<br>
+      &emsp;&emsp;暑さに慣れて、暑さに強くなります。<br>
+      &emsp;&emsp;暑熱順化できている時は汗をかきやすくなり、<br>
+      &emsp;&emsp;体温が上昇しやすくなります。<br>
+      &emsp;&emsp;つまり熱中症になりにくいということです。<br>
+      &emsp;&emsp;目安：<span class="borderunder">連続5日間、2時間以上</span>暑い環境で<br>
+      &emsp;&emsp;汗をかくこと
+    </p>
+
+    <p>
+      <img src="img/human1.png" 
+      width="40%"
+      height="40%"
+      alt="">
+    </p>
+  </div>
+
+  <div style="text-align: center;">
+      <img src="img/junka.jpg" 
+      width="75%"
+      height="75%"
+      alt="暑熱順化の説明">
+  </div>
+  <p style="text-align: center; font-size: 14px;" >
+      引用元：https://www.netsuzero.jp/learning/le15
+  </p><br>
+
+
+  <br>
+  <h4>発汗量と汗のナトリウム濃度の関係</h4>
+  <div class="index-top">
+    <p class="text">
+      &emsp;&emsp;まず、右のグラフを見てください。<br>
+      &emsp;&emsp;発汗量と汗のナトリウム濃度の関係を表していま<br>
+      &emsp;&emsp;す。暑熱順化してない人は汗の量が少ないですが<br>
+      &emsp;&emsp;順化が進むと増えていくことがわかります。<br>
+      &emsp;&emsp;<span class="borderunder">4~7日後</span><br>
+      &emsp;&emsp;汗をたくさんかくようになり、効率的に体温調節<br>
+      &emsp;&emsp;が可能に！<br>
+      &emsp;&emsp;<span class="borderunder">2~4週後</span><br>
+      &emsp;&emsp;ナトリウム喪失の抑制も可能に！<br>
+    </p>
+    <p>
+      <img src="img/junka2.png" 
+      alt="汗のナトリウム濃度">
+      &emsp;&emsp;引用元：https://www.netsuzero.jp/learning/le15
+    </p>
+  </div>
+
+  <h4>水分補給のポイント</h4>
+  <div class="index-top">
+    <p class="text">
+      &emsp;&emsp;・十分な<span class="borderunder">水分</span>をとる。<br>
+      &emsp;&emsp;&emsp;20~30分毎にカップ1~2杯<br><br>
+      &emsp;&emsp;・水分だけでなく<span class="borderunder">塩分</span>も補給する。<br>
+      &emsp;&emsp;&emsp;塩分0.1~0.2%（厚生労働省推奨）<br><br>
+      &emsp;&emsp;・<span class="borderunder">のどの渇き</span>に関係なく飲む。</span><br>
+      &emsp;&emsp;&emsp;渇きを感じた時点で既に遅い<br>
+    </p>
+    <p>
+      <img src="img/kabaya.png" 
+      alt="Kabayaの塩分チャージタブレット">
+    </p>
+  </div>
+
+  <h4>水分補給の注意点</h4>
+  <div style="text-align: center;">
+    <img src="img/tyuuiten.png" 
+    width="75%"
+    height="75%"
+    alt="暑熱順化の説明">
+</div>
+<br>
+
+
+  <h3 class="footer">＜＜　教育内容を選んで下さい　＞＞</h3>
+    <div class="menu">
+    <a href="about.html"><img src="img/index/about.png" width="180px" height="60px" alt="教育の概要"></a>
+
+    <a href="symptoms.html"><img src="img/index/symptoms-about.png" width="180px" height="60px" alt="熱中症の症状"></a>
+
+    <a href="prevention.html"><img src="img/index/prevent.png" width="180px" height="60px" alt="熱中症の予防方法"></a>
+
+    <a href="emergency.html"><img src="img/index/emergency.png" width="180px" height="60px" alt="緊急時の措置"></a>
+
+    <a href="example.html"><img src="img/index/example.png" width="180px" height="60px" alt="事例紹介"></a>
+    </div>
+</body>
+
+
+<footer>
+  <small>(c)2022 t-ogino.All Rights Reserved</small>
+</footer>
+
+</html>

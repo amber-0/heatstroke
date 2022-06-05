@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg">
+  <title>熱中症予防労働衛生教育 | 発生する仕組みと症状</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<header>
+  <div class="container">
+    <a href="index.html">
+      <img src="img/logo.png" 
+      alt="Heat Stroke"
+      width="200"
+      height="60"
+      class="logo">
+    </a>
+  </div>
+
+  <nav>
+    <ul class="gnav">
+      <li><a href="about.html">教育の概要</a></li> 
+      <li><a href="symptoms.html">熱中症の症状</a>
+        <ul>
+          <li><a href="symptoms-about.html">熱中症の概要</a></li>            
+          <li><a href="symptoms-feature.html">職場における熱中症の特徴</a></li>            
+          <li><a href="symptoms-temp.html">体温の調節</a></li>            
+          <li><a href="symptoms-liquid.html">体液の調節</a></li>            
+          <li><a href="symptoms-occur.html">発生する仕組みと症状</a></li>            
+        </ul>
+      </li>
+      <li><a href="prevention.html">熱中症の予防方法</a>
+        <ul>
+          <li><a href="prevention-wbgt.html">WBGT値について</a></li>            
+          <li><a href="prevention-env.html">作業環境管理</a></li>            
+          <li><a href="prevention-work.html">作業管理</a></li>            
+          <li><a href="prevention-health.html">健康管理</a></li>            
+          <li><a href="prevention-example.html">熱中症対策事例</a></li>            
+        </ul>
+      </li>
+      <li><a href="emergency.html">緊急時の措置</a>
+        <ul>
+          <li><a href="emergency-report.html">緊急連絡網の周知</a></li>            
+          <li><a href="emergency-rescue.html">緊急時の救急措置</a></li>            
+       </ul>
+      </li>
+      <li><a href="example.html">事例紹介</a></li>      
+    </ul>
+  </nav>
+
+</header>
+
+
+<body>
+  <h1>発生する仕組みと症状</h1>
+  <h2>GIFアニメーションで見てみよう！</h2>
+  <p>&emsp;&emsp;ここでは飲料メーカーが作成しているサイト内のGIFを引用して学習しましょう。<br>
+  &emsp;&emsp;左右のボタンを押して進めてください。</p>
+
+  <div class="parent">
+    <img id="mypic" src="img/otsuka/index_im01.gif" width="580" height="380">
+    <div class="children1">
+      <input type="button" value="" onclick="go_back()" class="goback">
+    </div>  
+    <div class="children2">      
+      <input type="button" value="" onclick="go_forward()" class="goforward">
+    </div>
+  </div>
+      <script>
+      var pics_src = new Array("img/otsuka/index_im01.gif","img/otsuka/index_im02.gif","img/otsuka/index_im03.gif","img/otsuka/index_im04.gif","img/otsuka/index_im05.gif","img/otsuka/index_im06.gif","img/otsuka/index_im07.gif","img/otsuka/index_im08.gif","img/otsuka/index_im09.gif","img/otsuka/index_im10.gif","img/otsuka/index_im11.gif","img/otsuka/index_im12.gif","img/otsuka/index_im13.gif","img/otsuka/index_im14.gif","img/otsuka/index_im15.gif","img/otsuka/index_im16.gif","img/otsuka/index_im17.gif","img/otsuka/index_im18.gif","img/otsuka/index_im19.gif","img/otsuka/index_im20.gif","img/otsuka/index_im21.gif");
+      var num = 0;
+
+      function go_forward(){
+          if (num == 20) {
+              num = 0;
+          }
+          else {
+              num ++;
+          }
+          document.getElementById("mypic").src=pics_src[num];
+      }
+
+      function go_back(){
+          if (num == 0) {
+              num = 20;
+          }
+          else {
+              num --;
+          }
+          document.getElementById("mypic").src=pics_src[num];
+      }
+      </script>
+
+
+<p style="text-align: center; font-size: 14px;" >
+  引用元：https://www.otsuka.co.jp/health-and-illness/heat-disorders/mechanism/
+ </p>   
+
+<br>
+
+  <h3 class="footer">＜＜　教育内容を選んで下さい　＞＞</h3>
+    <div class="menu">
+    <a href="about.html"><img src="img/index/about.png" width="180px" height="60px" alt="教育の概要"></a>
+
+    <a href="symptoms.html"><img src="img/index/symptoms-about.png" width="180px" height="60px" alt="熱中症の症状"></a>
+
+    <a href="prevention.html"><img src="img/index/prevent.png" width="180px" height="60px" alt="熱中症の予防方法"></a>
+
+    <a href="emergency.html"><img src="img/index/emergency.png" width="180px" height="60px" alt="緊急時の措置"></a>
+
+    <a href="example.html"><img src="img/index/example.png" width="180px" height="60px" alt="事例紹介"></a>
+    </div>
+</body>
+
+
+<footer>
+  <small>(c)2022 t-ogino.All Rights Reserved</small>
+</footer>
+
+</html>
